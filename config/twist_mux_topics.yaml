@@ -13,7 +13,7 @@ topics:
   priority: 10
 -
   name    : keyboard
-  topic   : cmd_vel_mux/input/teleop
+  topic   : mattbot_teleop/cmd_vel
   timeout : 0.5
   priority: 90
 
