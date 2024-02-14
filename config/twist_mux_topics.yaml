@@ -10,7 +10,7 @@ topics:
   name    : navigation
   topic   : cmd_vel_mux/input/nav_vel
   timeout : 0.5
-  priority: 10
+  priority: 91
 -
   name    : keyboard
   topic   : mattbot_teleop/cmd_vel
