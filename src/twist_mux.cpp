@@ -60,9 +60,7 @@ TwistMux::TwistMux(int window_size)
   getTopicHandles(nh, nh_priv, "locks" , *lock_hs_ );
 
   /// Publisher for output topic:
-  std::string robot_id = std::getenv("ROBOT_ID");
-  cmd_pub_ = nh.advertise<geometry_msgs::Twist>("robot" + robot_id + "/" + "cmd_vel", 1);
-  // cmd_pub_ = nh.advertise<geometry_msgs::Twist>("cmd_vel_out", 1);
+  cmd_pub_ = nh.advertise<geometry_msgs::Twist>("cmd_vel_out", 1);
 
   /// Diagnostics:
   diagnostics_ = boost::make_shared<diagnostics_type>();
