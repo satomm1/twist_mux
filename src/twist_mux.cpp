@@ -106,8 +106,7 @@ void TwistMux::getTopicHandles(ros::NodeHandle& nh, ros::NodeHandle& nh_priv, co
       xh::getStructMember(output_i, "timeout" , timeout );
       xh::getStructMember(output_i, "priority", priority);
 
-      std::string robot_id = std::getenv("ROBOT_ID");
-      topic_hs.emplace_back(nh, name, "robot" + robot_id + "/" + topic, timeout, priority, this);
+      topic_hs.emplace_back(nh, name, topic, timeout, priority, this);
     }
   }
   catch (const xh::XmlrpcHelperException& e)
