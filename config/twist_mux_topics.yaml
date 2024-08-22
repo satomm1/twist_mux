@@ -15,5 +15,5 @@ topics:
   name    : keyboard
   topic   : mattbot_teleop/cmd_vel
   timeout : 0.5
-  priority: 90
+  priority: 92
 
