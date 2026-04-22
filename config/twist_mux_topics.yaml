@@ -7,6 +7,11 @@
 
 topics:
 -
+  name    : active_obs
+  topic   : cmd_vel_mux/input/active_obs
+  timeout : 0.5
+  priority: 90
+-
   name    : navigation
   topic   : cmd_vel_mux/input/nav_vel
   timeout : 0.5
@@ -16,4 +21,3 @@ topics:
   topic   : mattbot_teleop/cmd_vel
   timeout : 0.5
   priority: 92
-
